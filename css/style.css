@@ -675,11 +675,11 @@ body{
     box-shadow: none;
   }
   .pic06{
+    margin-top: 40px;
     position: relative;
     min-width: 92vw;
     min-height: 0px;
     height: 61.3vw;
-    background-image: url(/image/圖6.jpg);
     box-shadow: none;
     padding: 16px;
     display: flex;
