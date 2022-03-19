@@ -17,7 +17,7 @@ h3{
   font-size: 24px;
 }
 p{
-  font-size: 12px;
+  font-size: 14px;
 }
 .wrapper{
   max-width: 1260px;
@@ -354,7 +354,129 @@ body{
   align-items: flex-end;
   flex-direction: column;
 }
+.sec08{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec08_area1{
+  width: 70%;
+  /* background-color: darkcyan; */
+  margin-right: 12px;
+}
+.sec08_area2{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: aqua; */
+  margin-left: 12px;
+}
+.sec08_area2 > *{
+  margin-bottom: 4px;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
 .text_area > *{
+  text-shadow: 0px 0px 16px #FFFFFF, 0px 0px 16px #FFFFFF, 0px 0px 16px #FFFFFF, 0px 0px 16px #FFFFFF, 0px 0px 8px #FFFFFF;
+  margin-bottom: 24px;
+}
+.pic12{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(/image/圖17.jpg);
+  background-size: cover;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.big_font{
+  font-size: 90px;
+}
+.sec09{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec09_area1{
+  width: 70%;
+  /* background-color: darkcyan; */
+  margin-right: 12px;
+}
+.sec09_area2{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: aqua; */
+  margin-left: 12px;
+}
+.sec09_area2 > *{
+  margin-bottom: 4px;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+.pic13{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(/image/圖19.jpg);
+  background-size: cover;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.sec10{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec10_area1{
+  width: 70%;
+  /* background-color: darkcyan; */
+  margin-right: 12px;
+}
+.sec10_area2{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: aqua; */
+  margin-left: 12px;
+}
+.sec10_area2 > *{
+  margin-bottom: 4px;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+.pic14{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(/image/圖18.jpg);
+  background-size: cover;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.sec11{
+  margin-top: 40px;
+  min-height:250px;
+  /* background-color: beige; */
+  display: flex;
+}
+.pic15{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(/image/圖20.jpg);
+  background-position: center;
+  background-size: contain;
+  /* background-position: 0% 100%; */
+  padding-bottom: 0px;
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+}
+.text_area2 > *{
   text-shadow: 0px 0px 16px #FFFFFF, 0px 0px 16px #FFFFFF, 0px 0px 16px #FFFFFF, 0px 0px 16px #FFFFFF, 0px 0px 8px #FFFFFF;
   margin-bottom: 24px;
 }
