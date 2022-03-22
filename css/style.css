@@ -1,5 +1,36 @@
 @charset "UFT-8";
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+.link{
+  display:inline-block;
+  min-width: 100%;
+  min-height: 100%;
+  /* background-color: aqua; */
+  width: inherit;
+  z-index: 300;
+}
+.link2{
+  /* 給IMG用 */
+  display:inline-block;
+  min-width: 100%;
+  width: inherit;
+  z-index: 300;
+  /* height: 100%; */
+  /* background-color: aqua; */
+}
+.link3{
+  /* 給父層級有relative用 */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display:inline-block;
+  min-width: 100%;
+  min-height: 100%;
+  /* background-color: aqua; */
+  width: inherit;
+  z-index: 300;
+}
 html{
 font-size: 100%;
 }
@@ -153,7 +184,9 @@ p{
   background-size: cover ;
   background-position: center;
   min-width: 100%;
+  width: 100%;
   min-height: 600px;
+  height: 600px;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
 }
 .pic04 > *{
@@ -182,6 +215,7 @@ p{
   background-image: url(https://upload.cc/i1/2022/03/21/4uPMbm.jpg);
   background-size: cover;
   min-height: 600px;
+  height: 600px;
   padding: 32px;
   justify-content: end;
   align-items: end;
@@ -302,10 +336,10 @@ body{
   position: relative;
   min-width: 100%;
   min-height: 100%;
+  height: 100%;
   background-image: url(https://upload.cc/i1/2022/03/21/BycWIK.jpg);
   background-size: cover;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
-  padding: 24px;
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -396,6 +430,7 @@ body{
   position: relative;
   min-width: 100%;
   min-height: 100%;
+  height: 100%;
   background-image: url(https://upload.cc/i1/2022/03/21/RQ2xX3.jpg);
   background-size: cover;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
@@ -431,6 +466,7 @@ body{
   position: relative;
   min-width: 100%;
   min-height: 100%;
+  height: 100%;
   background-image: url(https://upload.cc/i1/2022/03/21/vUdO0y.jpg);
   background-size: cover;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
@@ -463,6 +499,7 @@ body{
   position: relative;
   min-width: 100%;
   min-height: 100%;
+  height: 100%;
   background-image: url(https://upload.cc/i1/2022/03/21/AJergQ.jpg);
   background-size: cover;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
@@ -732,6 +769,7 @@ body{
     position: relative;
     min-width: 92vw;
     min-height: 69vw;
+    height: 69vw;
     box-shadow: none;
   }
   .sec06_area2{
@@ -807,7 +845,7 @@ body{
   }
   .pic12{
     min-width: 92vw;
-    min-height: 60.8vw;
+    height: 60.8vw;
     box-shadow: none;
   }
   .big_font{
@@ -839,7 +877,7 @@ body{
   }
   .pic13{
     min-width: 92vw;
-    min-height: 60.8vw;
+    height: 60.8vw;
     box-shadow: none;
   }
   .sec10{
@@ -866,7 +904,7 @@ body{
   }
   .pic14{
     min-width: 92vw;
-    min-height: 60.8vw;
+    height: 60.8vw;
     box-shadow: none;
   }
 }
