@@ -71,6 +71,7 @@ p{
 }
 .pic02{
   width: 100%;
+  margin-top: 40px;
 }
 .pic02 img{
   display: block;
@@ -113,27 +114,20 @@ p{
   /* background-color: blueviolet; */
 }
 .pic03{
-  padding-bottom: 16px;
+  padding-bottom: 40px;
   border-right:none;
   height: auto;
 }
 .pic03 img{
   display: block;
   width: 100%;
+  margin-bottom: 40px;
  /* max-height: 800px; */
 }
-.pic04{
-  height: auto;
-  /* background-color: aquamarine; */
-}
-.pic04 img{
-  display: block;
-  width: 100%;
-}
-.pic04 > *{
+.pic03 > *{
   text-align: center;
 }
-.pic04 h1{
+.pic03 h1{
   text-align: center;
   line-height: 50px;
 }
@@ -176,9 +170,11 @@ p{
 .pic05 img{
   display: block;
   width: 100%;
+  margin-bottom: 40px;
 }
 .pic05 h2{
   text-align: center;
+  margin-bottom: 16px;
 }
 .pic06{
   margin-top: 40px;
@@ -239,6 +235,7 @@ body{
 .pic09 img{
   display: block;
   width: 100%;
+  margin-bottom: 40px;
 }
 .pic10 >h2{
   margin-top: 24px;

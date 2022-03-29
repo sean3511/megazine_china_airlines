@@ -11,6 +11,334 @@
     <link rel="stylesheet" href="css/style2.css">
     <!-- google font -->
     <style>
+   @charset "UFT-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html{
+font-size: 100%;
+}
+#index{
+  min-height: 100vh;
+}
+h1{
+  font-size: 32px;
+  text-align: center;
+}
+h2{
+  text-align: center;
+  display: block;
+  font-size: 22px;
+}
+h3{
+  text-align: center;
+  font-size: 18px;
+}
+p{
+  font-size: 14px;
+}
+.wrapper{
+  max-width: 1260px;
+  margin: 0 auto;
+  padding:0 4%;
+  /* background-color: khaki; */
+}
+.content-display{
+  /* margin-top: 15vh; */
+  height: 100vh;;
+  /* background-color: mediumseagreen; */
+}
+.main_logo{
+  padding: 16px;
+  text-align: center;
+  max-height: 60px;
+}
+.main_logo img{
+  display: inline-block;
+  max-height: 24px;
+  margin-right: 8px;
+}
+.M_logo1{
+  width: 128px;
+  min-width: 128px;
+  max-width: 128px;
+}
+.M_logo2{
+  width: 50px;
+  min-width: 50px;
+  max-width: 50px;
+}
+.sec01{
+  height: auto;
+  width: 100%;
+  /* background-color: yellow; */
+  position: relative;
+}
+.pic01{
+  width: 100%;
+  /* padding-bottom: 16px; */
+  /* margin: 0 auto; */
+}
+.pic01 img{
+    display: block;
+    width: 100%;
+
+}
+.pic02{
+  width: 100%;
+  margin-top: 40px;
+}
+.pic02 img{
+  display: block;
+  width: 100%;
+}
+
+/* 紅色彩帶 */
+.red_label{
+  display: block;
+  width: 100%;
+  /* margin: 0 auto; */
+  text-align: center;
+  margin: 32px auto;
+}
+.label_font{
+  background-color: rgb(208, 18,27);
+ display:inline-block;
+ padding: 12px 48px;
+ border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  /* background-color: royalblue; */
+}
+/* 紅色彩帶 */
+.main_title{
+  margin: 8px 0;
+  align-items: center;
+}
+.main_title > *{
+  text-align: center;
+  margin: 8px;
+}
+.gray_line{
+  margin: 20px 0px;
+  min-height: 2px;
+  background-color: rgb(201, 202, 202);
+}
+.sec02{
+  min-height: 500px;
+  /* background-color: blueviolet; */
+}
+.pic03{
+  padding-bottom: 40px;
+  border-right:none;
+  height: auto;
+}
+.pic03 img{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+ /* max-height: 800px; */
+}
+.pic03 > *{
+  text-align: center;
+}
+.pic03 h1{
+  text-align: center;
+  line-height: 50px;
+}
+.title_banner{
+  margin-top: 40px;
+  background-color: rgb(130,94,138);
+  padding: 8px;
+  justify-content: center;
+}
+.title_banner h2{
+  text-align: center;
+  color: white;
+}
+.sec03{
+  width: 100%;
+}
+.img03{
+  margin-top: 40px;
+}
+.img03 img{
+  display: block;
+  width: 100%;
+}
+.sec03 > h2{
+  /* display:block; */
+  /* max-width: 80%; */
+  /* color: white; */
+  margin-bottom: 16px;
+  text-align: center;
+  /* float: right; */
+}
+.sec04{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+}
+.pic05{
+  min-width: 100%;
+}
+.pic05 img{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.pic05 h2{
+  text-align: center;
+  margin-bottom: 16px;
+}
+.pic06{
+  margin-top: 40px;
+  /* min-width: 100%; */
+  justify-content: end;
+}
+.pic06 img{
+  display: block;
+  width: 100%;
+}
+.pic06 h2{
+  text-align: center;
+  margin-bottom: 16PX;
+}
+.sec05{
+  margin-top: 40px;
+  min-height:0px;
+  /* background-color: beige; */
+}
+.pic07 h2{
+  margin-top: 16px;
+  text-align: center;
+}
+.pic07 h3{
+  margin-top: 16px;
+  text-align: center;
+}
+.pic07{
+  width: 100%;
+}
+.pic07 img{
+  display: block;
+  width: 100%;
+}
+.sec06{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+}
+body{
+  margin: 0;
+ /* font-family: 'poppins',"微軟正黑體","Open Sans Condensed",sans-serif; */
+ line-height: 1,7;
+ background-color: white;
+ background-repeat:no-repeat;
+ overflow: scroll;
+}
+.pic08{
+  width: 100%;
+}
+.pic08 img{
+  width: 100%;
+  display: block;
+}
+.pic09{
+  margin-top: 40px;
+}
+.pic09 img{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.pic10 >h2{
+  margin-top: 24px;
+}
+.sec07{
+  margin-top: 40px;
+  min-height:450px;
+  /* background-color: beige; */
+}
+.pic10{
+  min-width: 100%;
+}
+.pic10 img{
+  display: block;
+  width: 100%;
+}
+.pic11{
+  margin-top: 40px;
+}
+.pic11 img{
+  width: 100%;
+  display: block;
+}
+.pic11 > h2{
+  margin-bottom: 16px;
+}
+.pic11 > h3{
+  margin-bottom: 16px;
+}
+.sec08{
+  margin-top: 40px;
+  min-height: 0px;
+  /* background-color: beige; */
+  /* background-color: beige; */
+}
+.pic12{
+  min-width: 100%;
+}
+.pic12 img{
+  display: block;
+  width: 100%;
+}
+.big_font{
+  font-size: 60px;
+}
+.sec09{
+   margin-top: 40px;
+  min-height:0px;
+  /* background-color: beige; */
+}
+.pic13{
+  min-width: 100%;
+}
+.pic13 img{
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+}
+.sec10{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+}
+.pic14{
+  min-width: 100%;
+}
+.pic14 img{
+  display: block;
+  width: 100%;
+}
+.sec11{
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  /* background-color: beige; */
+}
+.sec11 td > *{
+  margin-top: 16px;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+.icon{
+  margin: 4px;
+  width: 40px;
+  max-width: 40px;
+  height: 40px;
+  max-height: 40px;
+}
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,22 +359,12 @@
                       <a href="https://www.ciaotw.com/2022/03/04/%e8%b5%b0%e9%80%b2%e5%8f%b0%e5%8a%87%e5%a0%b4%e6%99%af%e8%a3%a1/">
                         <img src="https://upload.cc/i1/2022/03/29/1B7JCu.jpg" alt="">
                       </a>
-                      <a href="https://www.ciaotw.com/2022/03/04/%e8%b5%b0%e9%80%b2%e5%8f%b0%e5%8a%87%e5%a0%b4%e6%99%af%e8%a3%a1/">
-                        <div class="red_label">
-                          <p class="label_font">GO</p>
-                        </div>
-                      </a>
                 </div>
                 <div class="pic02">
                   <a href="https://www.ciaotw.com/2022/03/04/%e8%b5%b0%e9%80%b2%e5%8f%b0%e5%8a%87%e5%a0%b4%e6%99%af%e8%a3%a1/">
                     <img src="https://upload.cc/i1/2022/03/29/8BQUur.jpg" alt="">
                   </a>
                 </div>
-                <a href="https://www.ciaotw.com/2022/03/04/%e8%b5%b0%e9%80%b2%e5%8f%b0%e5%8a%87%e5%a0%b4%e6%99%af%e8%a3%a1/">
-                  <div class="red_label">
-                    <p class="label_font">GO</p>
-                </div>
-                </a>
             </div>
             <div class="main_title">
                 <h2>COVER STORY</h1>
@@ -58,16 +376,6 @@
                    <a href="https://www.ciaotw.com/">
                     <img src="https://upload.cc/i1/2022/03/21/aVLoi4.jpg" alt="">
                    </a>
-                </div>
-                <div class="pic04">
-                    <a href="https://www.ciaotw.com/2022/03/04/crowdlu/">
-                      <img src="https://upload.cc/i1/2022/03/29/7kPjWd.jpg" alt="">
-                    </a>
-                    <a href="https://www.ciaotw.com/2022/03/04/crowdlu/">
-                      <div class="red_label">
-                        <p class="label_font">GO</p>
-                    </div>
-                    </a>
                    <h2>COVER PEOPLE</h2>
                    <h1>盧廣仲<br>心安即旅行</h1>
                    <h3>盧廣仲不一樣了！經歷了高低潮，他以更豁達的態度面對生命中的高低起伏；突破自我，只為了留下可以傳世的作品，就像他欣賞的那些歷史古蹟一般。</h3>
@@ -83,24 +391,11 @@
                   <img src="https://upload.cc/i1/2022/03/29/N6tqIc.jpg" alt="">
                 </a>
               </div>
-                <a href="https://www.ciaotw.com/2022/01/17/%e8%8f%af%e8%88%aa%e5%85%a8%e6%96%b0a321neo%e6%a9%9f%e9%9a%8a-%e5%ae%a2%e8%89%99%e9%85%8d%e5%82%99%e5%85%a8%e9%9d%a2%e5%8d%87%e7%b4%9a/">
-                  <div class="red_label">
-                    <p class="label_font">GO</p>
-                  </div>
-                </a>
-                <h2>SKY NEWS</h2>
-                <h2>中華航空全新A321neo機隊</h2>
-                <h2>新機客艙配備全面升級，還有配備全平躺式座椅的豪華商務艙。</h2>
             </div>
             <div class="sec04">
                     <div class="pic05">
                         <a href="https://www.tigerairtw.com/zh-tw/">
                           <img src="https://upload.cc/i1/2022/03/29/43zFTC.jpg" alt="">
-                        </a>
-                        <a href="https://www.tigerairtw.com/zh-tw/">
-                          <div class="red_label">
-                            <p class="label_font">GO</p>
-                        </div>
                         </a>
                         <h2>SKY NEWS</h2>
                         <h2>台灣虎航<br>首架文字彩繪機</h2>
@@ -109,25 +404,12 @@
                       <a href="https://www.ciaotw.com/2022/03/08/eat-play-shop-new-tokyo/">
                         <img src="https://upload.cc/i1/2022/03/29/BamwTQ.jpg" alt="">
                       </a>
-                      <a href="https://www.ciaotw.com/2022/03/08/eat-play-shop-new-tokyo/">
-                        <div class="red_label">
-                          <p class="label_font">GO</p>
-                      </div>
-                      </a>
-                        <h2>VOYAGE</h2>
-                        <h2>玩樂新東京</h2>
-                        <h2>預習東京，新設施、新場域一次收集。</h2>
                      </div>
             </div>
             <div class="sec05">
               <div class="pic07">
                 <a href="https://www.ciaotw.com/2022/03/14/sakurayamagata/">
                   <img src="https://upload.cc/i1/2022/03/29/OvDskB.jpg" alt="">
-                </a>
-                <a href="https://www.ciaotw.com/2022/03/14/sakurayamagata/">
-                  <div class="red_label">
-                    <p class="label_font">GO</p>
-                 </div>
                 </a>
                 <h2>EXPLORER</h2>
                 <h2>春櫻舞山形</h2>
@@ -148,20 +430,10 @@
                       <a class="link" href="https://www.mandarin-airlines.com/">
                         <img src="https://upload.cc/i1/2022/03/29/6jCE4X.jpg" alt="">
                       </a>
-                      <a href="https://www.mandarin-airlines.com/">
-                        <div class="red_label">
-                          <p class="label_font">GO</p>
-                      </div>
-                      </a>
                     </div>
                     <div class="pic09">
                       <a href="https://www.ciaotw.com/2022/03/01/1146-3/">
                         <img src="https://upload.cc/i1/2022/03/29/OZpqar.jpg" alt="">
-                      </a>
-                      <a href="https://www.ciaotw.com/2022/03/01/1146-3/">
-                        <div class="red_label">
-                          <p class="label_font">GO</p>
-                      </div>
                       </a>
                     </div>
                     <div class="sec04_area1_textarea">
@@ -174,12 +446,6 @@
                       <a href="https://www.ciaotw.com/2022/03/04/01-13/">
                         <img src="https://upload.cc/i1/2022/03/29/aGDzZj.jpg" alt="">
                       </a>
-                      <a href="https://www.ciaotw.com/2022/03/04/01-13/">
-                        <div class="red_label">
-                          <p class="label_font">GO</p>
-                      </div>
-                      </a>
-                       
                         <h2>FEATURE</h2>
                         <h2>喚醒內心深處的
                             <br>老靈魂</h2>
@@ -188,14 +454,6 @@
                       <a href="https://www.ciaotw.com/2022/03/14/tasteofspring/">
                         <img src="https://upload.cc/i1/2022/03/29/quwIHm.jpg" alt="">
                       </a>
-                      <a href="https://www.ciaotw.com/2022/03/14/tasteofspring/">
-                        <div class="red_label">
-                          <p class="label_font">GO</p>
-                      </div>
-                      </a>
-                        <h2 >FUN TAIWAN</h2>
-                        <h2>春品。味蕾之旅</h2>
-                        <h3>悠遊陽明山&霧峰，<br>尋訪好食風情。</h3>
                      </div>
             </div>
             <div class="gray_line"></div>
