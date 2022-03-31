@@ -23,7 +23,7 @@ p{
   font-size: 14px;
 }
 .wrapper{
-  max-width: 1260px;
+  max-width: 650px;
   margin: 0 auto;
   padding:0 4%;
   /* background-color: khaki; */
@@ -91,19 +91,11 @@ p{
  display:inline-block;
  padding: 12px 48px;
  border-radius: 4px;
-  font-size: 14px;
+  font-size: 24px;
   color: white;
   /* background-color: royalblue; */
 }
 /* 紅色彩帶 */
-.main_title{
-  margin: 8px 0;
-  align-items: center;
-}
-.main_title > *{
-  text-align: center;
-  margin: 8px;
-}
 .gray_line{
   margin: 20px 0px;
   min-height: 2px;
@@ -172,10 +164,6 @@ p{
   width: 100%;
   margin-bottom: 40px;
 }
-.pic05 h2{
-  text-align: center;
-  margin-bottom: 16px;
-}
 .pic06{
   margin-top: 40px;
   /* min-width: 100%; */
@@ -237,9 +225,6 @@ body{
   width: 100%;
   margin-bottom: 40px;
 }
-.pic10 >h2{
-  margin-top: 24px;
-}
 .sec07{
   margin-top: 40px;
   min-height:450px;
@@ -296,7 +281,6 @@ body{
 }
 .sec10{
   margin-top: 40px;
-  min-height:500px;
   /* background-color: beige; */
 }
 .pic14{
