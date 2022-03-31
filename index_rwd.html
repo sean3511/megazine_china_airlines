@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>magazine_test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="UI設計, 作品集">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- google font -->
+    <style>
+        @charset "UFT-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.icon{
+  margin: 4px;
+  width: 40px;
+  max-width: 40px;
+  height: 40px;
+  max-height: 40px;
+}
+table > *{
+  text-align: center;
+}
+html{
+font-size: 100%;
+}
+#index{
+  min-height: 100vh;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  display: block;
+  font-size: 28px;
+}
+h3{
+  font-size: 24px;
+}
+p{
+  font-size: 14px;
+}
+.wrapper{
+  max-width: 1260px;
+  margin: 0 auto;
+  padding:0 4%;
+  /* background-color: khaki; */
+}
+.content-display{
+  /* margin-top: 15vh; */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;;
+  /* background-color: mediumseagreen; */
+}
+.content-index{
+  flex-grow: 1;
+  /* display: flex; */
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* background-color: aliceblue; */
+}
+.main_logo{
+  padding: 16px;
+}
+.main_logo img{
+  display: inline-block;
+  max-height: 80px;
+  margin-right: 32px;
+}
+.sec01{
+  display: flex;
+  flex-direction: row-reverse;
+  height: 300px;
+  width: 100%;
+  /* background-color: yellow; */
+  position: relative;
+}
+.pic01{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  /* height: 100%; */
+  min-width:60%;
+  /* background-color: aqua; */
+  background-size: cover;
+  background-image: url(https://upload.cc/i1/2022/03/21/C7Nq9Q.jpg);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+.pic02{
+  /* height: 100%; */
+  min-width:60%;
+  /* background-color: aqua; */
+  background-size: cover;
+  background-image: url(https://upload.cc/i1/2022/03/21/ta6JLo.jpg);
+}
+
+
+/* 紅色彩帶 */
+.red_label{
+  display: inline;
+  position: absolute;
+  left: -20px;
+  bottom: 10%;
+  /* background-color: aliceblue; */
+}
+.red_label_mobile_only{
+  display: inline;
+  position: absolute;
+  left: -20px;
+  bottom: 10%;
+  display: none;
+  /* background-color: aliceblue; */
+}
+.red_label_top{
+  display: inline;
+  position: absolute;
+  left: -20px;
+  bottom: 80%;
+}
+.img_label{
+  min-width: 100px;
+}
+.label_font{
+  display: inline-block;
+  position: absolute;
+  font-size: 20px;
+  top:45%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* background-color: royalblue; */
+}
+/* 紅色彩帶 */
+.main_title{
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+.main_title > *{
+  margin-right: 16px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+.gray_line{
+  margin: 40px 0px;
+  min-height: 2px;
+  background-color: rgb(201, 202, 202);
+}
+.sec02{
+  display: flex;
+  min-height: 800px;
+  /* background-color: blueviolet; */
+}
+.pic03{
+  padding-bottom: 16px;
+  padding-right: 24px;
+  border-right: 2px solid rgb(201, 202, 202);
+}
+.pic03 img{
+  display: block;
+  width: 100%;
+ /* max-height: 800px; */
+}
+.pic04{
+  flex-grow: 1;
+  height: auto;
+  padding-left: 24px;
+  /* background-color: aquamarine; */
+}
+.pic04_div{
+  position: relative;
+  background-image: url('https://upload.cc/i1/2022/03/21/R2kmcL.jpg');
+  background-size: cover ;
+  background-position: center;
+  min-width: 100%;
+  min-height: 600px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.pic04 > *{
+  display: block;
+}
+.pic04 h1{
+  text-align: end;
+  /* line-height: 50px; */
+  margin-bottom:24px ;
+}
+.title_banner{
+  margin-top: 40px;
+  display: flex;
+  background-color: rgb(130,94,138);
+  padding: 8px;
+  justify-content: center;
+}
+.title_banner h2{
+  text-align: center;
+  color: white;
+}
+.sec03{
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  background-image: url(https://upload.cc/i1/2022/03/21/4uPMbm.jpg);
+  background-size: cover;
+  min-height: 600px;
+  padding: 32px;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+}
+.sec03 > h2{
+  display:block;
+  max-width: 40%;
+  color: white;
+  line-height: 36px;
+  text-align: end;
+}
+.sec04{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec04_area1_textarea > h2{
+  /* background-color: aqua; */
+  margin-top: 24px;
+  margin: 0x;
+  text-align: center;
+}
+.sec04_area1_textarea{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  /* background-color: aquamarine; */
+}
+.sec04_area2{
+  width: 70%;
+  /* background-color: darkcyan; */
+  margin-left: 12px;
+}
+.sec04_area1{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  /* background-color: aqua; */
+  margin-right: 12px;
+}
+.pic05{
+  position: relative;
+  background-image: url(https://upload.cc/i1/2022/03/21/umJvLA.jpg);
+  background-size: cover;
+  background-position: right;
+  min-width: 100%;
+  min-height: 300px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.pic06{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(https://upload.cc/i1/2022/03/21/c2ngG7.jpg);
+  background-size: cover;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+.pic06 h2{
+  color: white;
+  margin-top: 24px;
+}
+.sec05{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec05_txtarea{
+  margin-right: 12px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec05_txtarea > *{
+  margin-top: 24px;
+}
+.pic07{
+  position: relative;
+  margin-left: 12px;
+  width: 70%;
+  background-image: url(https://upload.cc/i1/2022/03/21/WeBHpz.jpg);
+  background-size: cover;
+}
+.sec06{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec06_area1{
+  width: 70%;
+  /* background-color: darkcyan; */
+  margin-right: 12px;
+}
+.sec06_area2{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  /* background-color: aqua; */
+  margin-left: 12px;
+}
+body{
+ /* font-family: 'poppins',"微軟正黑體","Open Sans Condensed",sans-serif; */
+ line-height: 1,7;
+ background-color: white;
+ background-repeat:no-repeat;
+}
+.pic08{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(https://upload.cc/i1/2022/03/21/BycWIK.jpg);
+  background-size: cover;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+.pic09{
+  position: relative;
+  background-image: url(https://upload.cc/i1/2022/03/21/tYUgbQ.jpg);
+  background-size: cover;
+  background-position: right;
+  min-width: 100%;
+  min-height: 350px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.sec07{
+  margin-top: 40px;
+  min-height:450px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec07_area1{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  /* background-color: aqua; */
+  margin-right: 12px;
+}
+.sec07_area1_textarea > h2{
+  /* background-color: aqua; */
+  margin-top: 24px;
+}
+.pic10{
+  position: relative;
+  background-image: url(https://upload.cc/i1/2022/03/21/NW8Rpo.jpg);
+  background-size: cover;
+  background-position: right;
+  min-width: 100%;
+  min-height: 300px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.sec07_area2{
+  width: 70%;
+  /* background-color: darkcyan; */
+  margin-left: 12px;
+}
+.pic11{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(https://upload.cc/i1/2022/03/21/rkB8TS.jpg);
+  background-size: cover;
+  background-position: 0% 100%;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.sec08{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec08_area1{
+  width: 70%;
+  /* background-color: darkcyan; */
+  margin-right: 12px;
+}
+.sec08_area2{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: aqua; */
+  margin-left: 12px;
+}
+.sec08_area2 > *{
+  margin-bottom: 4px;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+.text_area > *{
+  text-shadow: 0px 0px 16px #FFFFFF, 0px 0px 16px #FFFFFF, 0px 0px 16px #FFFFFF, 0px 0px 16px #FFFFFF, 0px 0px 8px #FFFFFF;
+  margin-bottom: 24px;
+}
+.pic12{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(https://upload.cc/i1/2022/03/21/RQ2xX3.jpg);
+  background-size: cover;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.big_font{
+  font-size: 90px;
+}
+.sec09{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec09_area1{
+  width: 70%;
+  /* background-color: darkcyan; */
+  margin-right: 12px;
+}
+.sec09_area2{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: aqua; */
+  margin-left: 12px;
+}
+.sec09_area2 > *{
+  margin-bottom: 4px;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+.pic13{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(https://upload.cc/i1/2022/03/21/vUdO0y.jpg);
+  background-size: cover;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.sec10{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+  display: flex;
+}
+.sec10_area1{
+  width: 70%;
+  /* background-color: darkcyan; */
+  margin-right: 12px;
+}
+.sec10_area2{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: aqua; */
+  margin-left: 12px;
+}
+.sec10_area2 > *{
+  margin-bottom: 4px;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+.pic14{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(https://upload.cc/i1/2022/03/21/AJergQ.jpg);
+  background-size: cover;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+.sec11{
+  min-width: 100%;
+  margin-top: 40px;
+  min-height:250px;
+  /* background-color: beige; */
+}
+.pic15{
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url(https://upload.cc/i1/2022/03/21/hawWY0.jpg);
+  background-position: center;
+  background-size: contain;
+  /* background-position: 0% 100%; */
+  padding-bottom: 0px;
+  display: flex;
+  align-items:flex-end;
+  justify-content: center;
+}
+.pic15 p{
+  text-align: center;
+}
+@media(max-width: 1024px) {
+  h1{
+    font-size: 32px;
+  }
+  h2{
+    display: block;
+    font-size: 22px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .main_logo{
+    padding: 16px;
+    text-align: center;
+    max-height: 60px;
+  }
+  .main_logo img{
+    max-height: 24px;
+    margin-right: 8px;
+  }
+  .sec01{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    /* background-color: yellow; */
+    position: relative;
+  }
+  .pic01{
+    position: relative;
+    max-height: 400px;
+    height: 40vh;
+    background-position: bottom;
+    clip-path: none;
+    margin-bottom: 16px;
+  }
+  .red_label_mobile_only{
+    display: inline;
+    position: absolute;
+    left: -12px;
+    bottom: 10%;
+    display: block;
+    /* background-color: aliceblue; */
+  }
+  .red_label{
+    left: -12px;
+  }
+  .red_label_mobile_only{
+    left: -12px;
+  }
+  .red_label_top{
+    left: -12px;
+  }
+  .img_label{
+    min-width: 60px;
+  }
+  .label_font{
+    font-size: 14px;
+    top:40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* background-color: royalblue; */
+  }
+  .pic02{
+    /* height: 100%; */
+    max-height: 400px;
+    height: 40vh;
+    background-position: top;
+    background-color: aqua;
+    background-size: cover;
+  }
+  .main_title{
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_title > *{
+    text-align: center;
+    margin: 8px;
+  }
+  .gray_line{
+    margin: 20px 0px;
+  }
+  .sec02{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    /* background-color: blueviolet; */
+  }
+  .pic03{
+    padding-bottom: 16px;
+    padding-right: 0px;
+    border-right:none;
+    height: auto;
+  }
+  .pic03 img{
+    width: 100%;
+    display: block;
+  }
+  .pic04{
+    flex-grow: 1;
+    height: auto;
+    padding-left: 0px;
+    /* background-color: aquamarine; */
+  }
+  .pic04_div{
+    min-width: 100%;
+    min-height: 500px;
+    height: 70vh;
+    box-shadow:none;
+  }
+  .pic04 > *{
+    margin-top: 16px;
+    display: block;
+    text-align: center;
+  }
+  .pic04 h1{
+    text-align: center;
+    line-height: 50px;
+    margin-bottom:0px ;
+  }
+  .sec03{
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    min-height: 0px;
+    width: 92vw;
+    height: 51.2vw;
+    padding: 16px;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+  }
+  .sec03 > h2{
+    display:block;
+    max-width: 80%;
+    font-size: 3vw;
+    color: white;
+    line-height: 8vw;
+    text-align: end;
+  }
+  .sec04{
+    margin-top: 40px;
+    min-height:500px;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+  }
+  .sec04_area1_textarea > h2{
+    /* background-color: aqua; */
+    margin-top: 16px;
+    margin: 0x;
+    text-align: center;
+  }
+  .sec04_area1_textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .sec04_area2{
+    width: 100%;
+    /* background-color: darkcyan; */
+    margin-left: 0px;
+  }
+  .sec04_area1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    margin-right: 12px;
+  }
+  .pic05{
+    background-size: cover;
+    background-position: right;
+    min-width: 92vw;
+    min-height: 0px;
+    height: 69vw;
+    box-shadow: none;
+  }
+  .pic06{
+    margin-top: 40px;
+    position: relative;
+    min-width: 92vw;
+    min-height: 0px;
+    height: 61.3vw;
+    box-shadow: none;
+    padding: 16px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+  }
+  .pic06 h2{
+    color: white;
+    margin-top: 0px;
+    font-size: 3vw;
+    line-height: 8vw;
+    text-align: end;
+  }
+  .sec05{
+    margin-top: 40px;
+    min-height:0px;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+  }
+  .sec05_txtarea{
+    margin-right: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+  }
+  .sec05_txtarea > *{
+    margin-top: 16px;
+    text-align: center;
+  }
+  .pic07{
+    position: relative;
+    margin-left: 0px;
+    width: 92vw;
+    height: 63.6vw;
+    order: 1;
+  }
+  .sec06{
+    min-height:500px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec06_area1{
+    width: 100%;
+    /* background-color: darkcyan; */
+    margin-right: 0px;
+  }
+  .pic08{
+    position: relative;
+    min-width: 92vw;
+    min-height: 69vw;
+    box-shadow: none;
+  }
+  .sec06_area2{
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .pic09{
+    background-size: cover;
+    min-width: 92vw;
+    min-height: 69vw;
+    box-shadow: none;
+  }
+  .sec07{
+    margin-top: 40px;
+    min-height:450px;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+  }
+  .sec07_area1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    margin-right: 12px;
+  }
+  .sec07_area1_textarea > h2{
+    width: 100%;
+    /* background-color: aqua; */
+    margin-top: 24px;
+  }
+  .pic10{
+    min-width: 92vw;
+    min-height: 61.3vw;
+    box-shadow: none;
+  }
+  .pic11{
+    margin-top: 40px;
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    box-shadow: none;
+    padding: 24px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .sec08{
+    margin-top: 40px;
+    min-height: 0px;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+  }
+  .sec08_area1{
+    width: 100%;
+    /* background-color: darkcyan; */
+    margin-right: 0px;
+  }
+  .sec08_area2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+    margin-left: 0px;
+  }
+  .sec08_area2 > *{
+    margin-bottom: 4px;
+    text-align: center;
+    /* background-color: aquamarine; */
+  }
+  .pic12{
+    min-width: 92vw;
+    min-height: 60.8vw;
+    box-shadow: none;
+  }
+  .big_font{
+    font-size: 60px;
+  }
+  .sec09{
+    margin-top: 40px;
+    min-height:0px;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+  }
+  .sec09_area1{
+    width: 100%;
+    /* background-color: darkcyan; */
+    margin-right: 0px;
+    order: 1;
+  }
+  .sec09_area2{
+    width: 100%;
+    /* background-color: aqua; */
+    margin-left: 0px;
+    order: 2;
+  }
+  .sec09_area2 > *{
+    margin-bottom: 4px;
+    text-align: center;
+    /* background-color: aquamarine; */
+  }
+  .pic13{
+    min-width: 92vw;
+    min-height: 60.8vw;
+    box-shadow: none;
+  }
+  .sec10{
+    margin-top: 40px;
+    min-height:0px;
+    /* background-color: beige; */
+    display: flex;
+    flex-direction: column;
+  }
+  .sec10_area1{
+    width: 100%;
+    /* background-color: darkcyan; */
+    margin-right: 0px;
+  }
+  .sec10_area2{
+    width: 100%;
+    display: flex;
+    margin-left: 0px;
+  }
+  .sec10_area2 > *{
+    margin-bottom: 4px;
+    text-align: center;
+    /* background-color: aquamarine; */
+  }
+  .pic14{
+    min-width: 92vw;
+    min-height: 60.8vw;
+    box-shadow: none;
+  }
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    
+     <!-- google font -->
+</head>
+<body>
+    <div id="index">
+        <div class="content-display wrapper">
+        <div class="content-index">
+            <div class="main_logo">
+                <img src="https://svgshare.com/i/fR5.svg" alt="">
+                <img src="https://svgshare.com/i/fSG.svg" alt="">
+            </div>
+            <div class="sec01">
+                <div class="pic01">
+                    <div class="red_label_mobile_only">
+                        <p class="label_font">GO</p>
+                        <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                    </div>
+                </div>
+                <div class="pic02"></div>
+                <div class="red_label">
+                    <p class="label_font">GO</p>
+                    <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                </div>
+            </div>
+            <div class="main_title">
+                <h2>COVER STORY</h1>
+                <h1>ACTION TAIWAN 走進台劇場景裡</h2>
+            </div>
+            <div class="gray_line"></div>
+            <div class="sec02">
+                <div class="pic03">
+                    <img src="https://upload.cc/i1/2022/03/21/aVLoi4.jpg" alt="">
+                </div>
+                <div class="pic04">
+                   <div class="pic04_div">
+                    <div class="red_label">
+                        <p class="label_font">GO</p>
+                        <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                    </div>
+                   </div>
+                   <h2>COVER PEOPLE</h2>
+                   <h1>盧廣仲<br>心安即旅行</h1>
+                   <h3>盧廣仲不一樣了！經歷了高低潮，他以更豁達的態度面對生命中的高低起伏；突破自我，只為了留下可以傳世的作品，就像他欣賞的那些歷史古蹟一般。</h3>
+                </div>
+            </div>
+            <div class="gray_line"></div>
+            <div class="title_banner">
+                <h2>INTERNATIONAL ∣ 國外</h2>
+            </div>
+            <div class="sec03">
+                <div class="red_label">
+                    <p class="label_font">GO</p>
+                    <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                </div>
+                <h2>SKY NEWS</h2>
+                <h2>中華航空全新A321neo機隊</h2>
+                <h2>新機客艙配備全面升級，還有配備全平躺式座椅的豪華商務艙。</h2>
+            </div>
+            <div class="sec04">
+                <div class="sec04_area1">
+                    <div class="pic05">
+                        <div class="red_label">
+                            <p class="label_font">GO</p>
+                            <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec04_area1_textarea">
+                    <h2>SKY NEWS</h2>
+                    <h2>台灣虎航<br>首架文字彩繪機</h2>
+                     </div>
+                </div>
+                <div class="sec04_area2">
+                     <div class="pic06">
+                        <div class="red_label_top">
+                            <p class="label_font">GO</p>
+                            <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                        </div>
+                        <h2>VOYAGE</h2>
+                        <h2>玩樂新東京</h2>
+                        <h2>預習東京，新設施、新場域一次收集。</h2>
+                     </div>
+                </div>
+            </div>
+            <div class="sec05">
+                <div class="sec05_txtarea">
+                    <h2>EXPLORER</h2>
+                    <h2>春櫻舞山形</h2>
+                    <h3>置賜櫻花迴廊<br>
+                        Flower長井線
+                        米澤城遺址所在的松岬公園
+                        山形城遺址所在的霞城公園
+                        天童櫻花祭真人將棋。</h3>
+                </div>
+                <div class="pic07">
+                    <div class="red_label">
+                        <p class="label_font">GO</p>
+                        <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="gray_line"></div>
+            <div class="title_banner">
+                <h2>DOMESTIC ∣ 台灣</h2>
+            </div>
+            <div class="sec06">
+                <div class="sec06_area1">
+                    <div class="pic08">
+                       <div class="red_label">
+                           <p class="label_font">GO</p>
+                           <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                       </div>
+                    </div>
+               </div>
+                <div class="sec06_area2">
+                    <div class="pic09">
+                        <div class="red_label">
+                            <p class="label_font">GO</p>
+                            <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec04_area1_textarea">
+                    <h2>FUN TAIWAN</h2>
+                    <h2>澎湖花火20 陪你遊行</h2>
+                     </div>
+                </div>
+            </div>
+            <div class="sec07">
+                <div class="sec07_area1">
+                    <div class="pic10">
+                        <div class="red_label">
+                            <p class="label_font">GO</p>
+                            <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="sec04_area1_textarea">
+                    <h2>FEATURE</h2>
+                    <h2>喚醒內心深處的
+                        <br>老靈魂</h2>
+                     </div>
+                </div>
+                <div class="sec04_area2">
+                     <div class="pic11">
+                        <div class="red_label_top">
+                            <p class="label_font">GO</p>
+                            <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                        </div>
+                        <div class="text_area">
+                        <h2 class="firsth2">FUN TAIWAN</h2>
+                        <h2>春品。味蕾之旅</h2>
+                        <h3>悠遊陽明山&霧峰，<br>尋訪好食風情。</h3>
+                        |</div>
+                     </div>
+                </div>
+            </div>
+            <div class="gray_line"></div>
+            <div class="title_banner">
+                <h2>EAT. PLAY. STAY ∣ 潮旅新訊</h2>
+            </div>
+            <div class="sec08">
+                <div class="sec08_area1">
+                    <div class="pic12">
+                       <div class="red_label">
+                           <p class="label_font">MORE</p>
+                           <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                       </div>
+                    </div>
+               </div>
+                <div class="sec08_area2">
+                    <h1 class="big_font">味</h1>
+                    <h1>美食饗宴</h1>
+                </div>
+            </div>
+            <div class="sec09">
+                <div class="sec09_area2">
+                    <h1 class="big_font">獨</h1>
+                    <h1>主題潮玩</h1>
+                </div>
+                <div class="sec09_area1">
+                    <div class="pic13">
+                       <div class="red_label">
+                           <p class="label_font">MORE</p>
+                           <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                       </div>
+                    </div>
+               </div>
+            </div>
+            <div class="sec10">
+                <div class="sec10_area1">
+                    <div class="pic14">
+                       <div class="red_label">
+                           <p class="label_font">MORE</p>
+                           <img class="img_label" src="https://svgshare.com/i/fRG.svg" alt="">
+                       </div>
+                    </div>
+               </div>
+                <div class="sec10_area2">
+                    <h1 class="big_font">優</h1>
+                    <h1>精選潮宿</h1>
+                </div>
+            </div>
+            <div class="gray_line"></div>
+            <table class="sec11">
+              <tbody>
+                    <tr>
+                        <td>
+                          <a href="https://members.china-airlines.com/dynasty-flyer/unsubscribe.aspx?fbclid=IwAR1W8ggQEZ_6rBigPASGwQeFA8ThaqoqHJuqmhpJjcHOCbUojhwUAwVGNEk">
+                            <img class="icon" src="https://upload.cc/i1/2022/03/25/UD1CpP.png" alt="">
+                          </a>
+                            <p>本郵件由系統直接寄出，請勿直接回覆，取消訂閱
+                                <a href="https://members.china-airlines.com/dynasty-flyer/unsubscribe.aspx?fbclid=IwAR1W8ggQEZ_6rBigPASGwQeFA8ThaqoqHJuqmhpJjcHOCbUojhwUAwVGNEk">請按此
+                                </a>
+                            </p>
+                            <h2>follow us:</h2>
+                        </td>
+                     </tr>
+                    <tr>
+                        <td>
+                          <a href="https://www.facebook.com/chinaairlines.travelchannel/">
+                            <img class="icon" src="https://upload.cc/i1/2022/03/29/AHsNb2.png" alt="">
+                          </a>
+                          <a href="https://www.instagram.com/chinaairlines.tw/">
+                            <img class="icon" src="https://upload.cc/i1/2022/03/25/UsOa6k.png" alt="">
+                          </a>
+                        </td>
+
+                    </tr> 
+                    <tr>
+                        <td>
+                        <p>出刊日期：2022.03 ｜ Copyright @ 華航集團及華訊事業. All Rights Reserved
+                        </p>
+                        </td>
+                    </tr>
+              </tbody>
+            </table>
+            <div class="gray_line"></div>
+        </div>
+    </div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="java.JS"></script>
+</body>
+</html>
