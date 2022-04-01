@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>magazine_testT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- google font -->
+    <style>
+  @charset "UFT-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+html{
+font-size: 100%;
+}
+#index{
+  min-height: 100vh;
+}
+h1{
+  font-size: 32px;
+  text-align: center;
+}
+h2{
+  text-align: center;
+  display: block;
+  font-size: 22px;
+}
+h3{
+  text-align: center;
+  font-size: 18px;
+}
+p{
+  font-size: 14px;
+}
+.wrapper{
+  max-width: 650px;
+  margin: 0 auto;
+  padding:0 4%;
+  /* background-color: khaki; */
+}
+.content-display{
+  /* margin-top: 15vh; */
+  height: 100vh;;
+  /* background-color: mediumseagreen; */
+}
+.main_logo{
+  padding: 16px;
+  text-align: center;
+  max-height: 60px;
+}
+.main_logo img{
+  display: inline-block;
+  max-height: 24px;
+  margin-right: 8px;
+}
+.M_logo1{
+  width: 128px;
+  min-width: 128px;
+  max-width: 128px;
+}
+.M_logo2{
+  width: 50px;
+  min-width: 50px;
+  max-width: 50px;
+}
+.sec01{
+  height: auto;
+  width: 100%;
+  /* background-color: yellow; */
+  position: relative;
+}
+.pic01{
+  width: 100%;
+  /* padding-bottom: 16px; */
+  /* margin: 0 auto; */
+}
+.pic01 img{
+    display: block;
+    width: 100%;
+
+}
+.pic02{
+  width: 100%;
+  margin-top: 40px;
+}
+.pic02 img{
+  display: block;
+  width: 100%;
+}
+
+/* 紅色彩帶 */
+.red_label{
+  display: block;
+  width: 100%;
+  /* margin: 0 auto; */
+  text-align: center;
+  margin: 32px auto;
+}
+.label_font{
+  background-color: rgb(208, 18,27);
+ display:inline-block;
+ padding: 12px 48px;
+ border-radius: 4px;
+  font-size: 24px;
+  color: white;
+  /* background-color: royalblue; */
+}
+/* 紅色彩帶 */
+.gray_line{
+  margin: 20px 0px;
+  min-height: 2px;
+  background-color: rgb(201, 202, 202);
+}
+.sec02{
+  min-height: 500px;
+  /* background-color: blueviolet; */
+}
+.pic03{
+  padding-bottom: 40px;
+  border-right:none;
+  height: auto;
+}
+.pic03 img{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+ /* max-height: 800px; */
+}
+.pic03 > *{
+  text-align: center;
+}
+.pic03 h1{
+  text-align: center;
+  line-height: 50px;
+}
+.title_banner{
+  margin-top: 40px;
+  background-color: rgb(130,94,138);
+  padding: 8px;
+  justify-content: center;
+}
+.title_banner h2{
+  text-align: center;
+  color: white;
+}
+.sec03{
+  width: 100%;
+}
+.img03{
+  margin-top: 40px;
+}
+.img03 img{
+  display: block;
+  width: 100%;
+}
+.sec03 > h2{
+  /* display:block; */
+  /* max-width: 80%; */
+  /* color: white; */
+  margin-bottom: 16px;
+  text-align: center;
+  /* float: right; */
+}
+.sec04{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+}
+.pic05{
+  min-width: 100%;
+}
+.pic05 img{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.pic06{
+  margin-top: 40px;
+  /* min-width: 100%; */
+  justify-content: end;
+}
+.pic06 img{
+  display: block;
+  width: 100%;
+}
+.pic06 h2{
+  text-align: center;
+  margin-bottom: 16PX;
+}
+.sec05{
+  margin-top: 40px;
+  min-height:0px;
+  /* background-color: beige; */
+}
+.pic07 h2{
+  margin-top: 16px;
+  text-align: center;
+}
+.pic07 h3{
+  margin-top: 16px;
+  text-align: center;
+}
+.pic07{
+  width: 100%;
+}
+.pic07 img{
+  display: block;
+  width: 100%;
+}
+.sec06{
+  margin-top: 40px;
+  min-height:500px;
+  /* background-color: beige; */
+}
+body{
+  margin: 0;
+ /* font-family: 'poppins',"微軟正黑體","Open Sans Condensed",sans-serif; */
+ line-height: 1,7;
+ background-color: white;
+ background-repeat:no-repeat;
+ overflow: scroll;
+}
+.pic08{
+  width: 100%;
+}
+.pic08 img{
+  width: 100%;
+  display: block;
+}
+.pic09{
+  margin-top: 40px;
+}
+.pic09 img{
+  display: block;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.sec07{
+  margin-top: 40px;
+  min-height:450px;
+  /* background-color: beige; */
+}
+.pic10{
+  min-width: 100%;
+}
+.pic10 img{
+  display: block;
+  width: 100%;
+}
+.pic11{
+  margin-top: 40px;
+}
+.pic11 img{
+  width: 100%;
+  display: block;
+}
+.pic11 > h2{
+  margin-bottom: 16px;
+}
+.pic11 > h3{
+  margin-bottom: 16px;
+}
+.sec08{
+  margin-top: 40px;
+  min-height: 0px;
+  /* background-color: beige; */
+  /* background-color: beige; */
+}
+.pic12{
+  min-width: 100%;
+}
+.pic12 img{
+  display: block;
+  width: 100%;
+}
+.big_font{
+  font-size: 60px;
+}
+.sec09{
+   margin-top: 40px;
+  min-height:0px;
+  /* background-color: beige; */
+}
+.pic13{
+  min-width: 100%;
+}
+.pic13 img{
+  width: 100%;
+  display: block;
+  margin-bottom: 16px;
+}
+.sec10{
+  margin-top: 40px;
+  /* background-color: beige; */
+}
+.pic14{
+  min-width: 100%;
+}
+.pic14 img{
+  display: block;
+  width: 100%;
+}
+.sec11{
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  /* background-color: beige; */
+}
+.sec11 td > *{
+  margin-top: 16px;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+.icon{
+  margin: 4px;
+  width: 40px;
+  max-width: 40px;
+  height: 40px;
+  max-height: 40px;
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    
+     <!-- google font -->
+</head>
+<body>
+    <div id="index">
+        <div class="content-display wrapper">
+        <div class="content-index">
+            <div class="main_logo">
+                <img class="M_logo1" src="https://upload.cc/i1/2022/03/31/TPJLnY.jpg" alt="">
+                <img class="M_logo2" src="https://upload.cc/i1/2022/03/23/BzXxmr.jpg" alt="">
+            </div>
+            <div class="sec01">
+                <div class="pic01">
+                      <a href="https://www.ciaotw.com/2022/03/04/%e8%b5%b0%e9%80%b2%e5%8f%b0%e5%8a%87%e5%a0%b4%e6%99%af%e8%a3%a1/">
+                        <img src="https://upload.cc/i1/2022/03/31/6WovQ7.jpg" alt="">
+                      </a>
+                </div>
+            </div>
+            <div class="gray_line"></div>
+            <div class="sec02">
+                <div class="pic03">
+                   <a href="https://www.ciaotw.com/">
+                    <img src="https://upload.cc/i1/2022/03/21/aVLoi4.jpg" alt="">
+                   </a>
+                   <h2>COVER PEOPLE</h2>
+                   <h1>盧廣仲<br>心安即旅行</h1>
+                   <h3>盧廣仲不一樣了！經歷了高低潮，他以更豁達的態度面對生命中的高低起伏；突破自我，只為了留下可以傳世的作品，就像他欣賞的那些歷史古蹟一般。</h3>
+                </div>
+            </div>
+            <div class="gray_line"></div>
+            <div class="title_banner">
+                <h2>INTERNATIONAL ∣ 國外</h2>
+            </div>
+            <div class="sec03">
+              <div class="img03">
+                <a href="https://www.ciaotw.com/2022/01/17/%e8%8f%af%e8%88%aa%e5%85%a8%e6%96%b0a321neo%e6%a9%9f%e9%9a%8a-%e5%ae%a2%e8%89%99%e9%85%8d%e5%82%99%e5%85%a8%e9%9d%a2%e5%8d%87%e7%b4%9a/">
+                  <img src="https://upload.cc/i1/2022/03/31/brwTvd.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="sec04">
+                    <div class="pic05">
+                        <a href="https://www.tigerairtw.com/zh-tw/">
+                          <img src="https://upload.cc/i1/2022/03/31/dRE0vh.jpg" alt="">
+                        </a>
+                    </div>
+                     <div class="pic06">
+                      <a href="https://www.ciaotw.com/2022/03/08/eat-play-shop-new-tokyo/">
+                        <img src="https://upload.cc/i1/2022/03/31/ti9gXG.jpg" alt="">
+                      </a>
+                     </div>
+            </div>
+            <div class="sec05">
+              <div class="pic07">
+                <a href="https://www.ciaotw.com/2022/03/14/sakurayamagata/">
+                  <img src="https://upload.cc/i1/2022/03/31/Yl15GH.jpg" alt="">
+                </a>
+                <h2>EXPLORER</h2>
+                <h2>春櫻舞山形</h2>
+                <h3>置賜櫻花迴廊<br>
+                    Flower長井線<br>
+                    米澤城遺址所在的松岬公園<br>
+                    山形城遺址所在的霞城公園<br>
+                    天童櫻花祭真人將棋。
+                </h3>
+              </div>
+            </div>
+            <div class="gray_line"></div>
+            <div class="title_banner">
+                <h2>DOMESTIC ∣ 台灣</h2>
+            </div>
+            <div class="sec06">
+                    <div class="pic08">
+                      <a class="link" href="https://www.mandarin-airlines.com/">
+                        <img src="https://upload.cc/i1/2022/03/31/3tRAx7.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="pic09">
+                      <a href="https://www.ciaotw.com/2022/03/01/1146-3/">
+                        <img src="https://upload.cc/i1/2022/04/01/3C8jJ9.jpg" alt="">
+                      </a>
+                    </div>
+            </div>
+            <div class="sec07">
+                    <div class="pic10">
+                      <a href="https://www.ciaotw.com/2022/03/04/01-13/">
+                        <img src="https://upload.cc/i1/2022/03/31/XbH1yg.jpg" alt="">
+                      </a>
+                    </div>
+                     <div class="pic11">
+                      <a href="https://www.ciaotw.com/2022/03/14/tasteofspring/">
+                        <img src="https://upload.cc/i1/2022/03/31/w5z2UN.jpg" alt="">
+                      </a>
+                     </div>
+            </div>
+            <div class="gray_line"></div>
+            <div class="title_banner">
+                <h2>EAT. PLAY. STAY ∣ 潮旅新訊</h2>
+            </div>
+            <div class="sec08">
+                    <div class="pic12">
+                      <a href="https://www.ciaotw.com/2022/03/04/0529-3/">
+                        <img src="https://upload.cc/i1/2022/03/21/RQ2xX3.jpg" alt="">
+                      </a>
+                      <a href="https://www.ciaotw.com/2022/03/04/0529-3/">
+                        <div class="red_label">
+                          <p class="label_font">味，美食饗宴</p>
+                      </div>
+                      </a>
+               </div>
+            </div>
+            <div class="sec10">
+                  <div class="pic14">
+                    <a href="https://www.ciaotw.com/2022/03/07/1102-3/">
+                      <img src="https://upload.cc/i1/2022/03/21/AJergQ.jpg" alt="">
+                    </a>
+                    <a href="https://www.ciaotw.com/2022/03/07/1102-3/">
+                      <div class="red_label">
+                        <p class="label_font">優，精選潮宿</p>
+                    </div>
+                    </a>
+                  </div>
+          </div>
+            <div class="sec09">
+                    <div class="pic13">
+                      <a href="https://www.ciaotw.com/2022/03/07/1109-4/">
+                        <img src="https://upload.cc/i1/2022/03/21/vUdO0y.jpg" alt="">
+                      </a>
+                      <a href="https://www.ciaotw.com/2022/03/07/1109-4/">
+                        <div class="red_label">
+                          <p class="label_font">獨，主題潮玩</p>
+                      </div>
+                      </a>
+                      <a href="https://www.ciaotw.com/2022/03/11/12311/?fbclid=IwAR0XdB8okZ7TWXrQCLz3iZl0IgOpM1V8zCxTBm6bwaiPnox8G8Z_rvKqV_I">
+                        <img class="pic14" src="https://upload.cc/i1/2022/03/25/Z0Cemi.jpg" alt="">
+                      </a>
+                    </div>
+            </div>
+            <div class="gray_line"></div>
+            <table class="sec11">
+              <tbody>
+                    <tr>
+                        <td>
+                          <a href="https://members.china-airlines.com/dynasty-flyer/unsubscribe.aspx?fbclid=IwAR1W8ggQEZ_6rBigPASGwQeFA8ThaqoqHJuqmhpJjcHOCbUojhwUAwVGNEk">
+                            <img class="icon" src="https://upload.cc/i1/2022/03/25/UD1CpP.png" alt="">
+                          </a>
+                            <p>本郵件由系統直接寄出，請勿直接回覆，取消訂閱
+                                <a href="https://members.china-airlines.com/dynasty-flyer/unsubscribe.aspx?fbclid=IwAR1W8ggQEZ_6rBigPASGwQeFA8ThaqoqHJuqmhpJjcHOCbUojhwUAwVGNEk">請按此
+                                </a>
+                            </p>
+                            <h3>follow us:</h3>
+                        </td>
+                     </tr>
+                    <tr>
+                        <td>
+                          <a href="https://www.facebook.com/chinaairlines.travelchannel/">
+                            <img class="icon" src="https://upload.cc/i1/2022/03/29/AHsNb2.png" alt="">
+                          </a>
+                          <a href="https://www.instagram.com/chinaairlines.tw/">
+                            <img class="icon" src="https://upload.cc/i1/2022/03/25/UsOa6k.png" alt="">
+                          </a>
+                        </td>
+
+                    </tr> 
+                    <tr>
+                        <td>
+                        <p>出刊日期：2022.03 ｜ Copyright @ 華航集團及華訊事業. All Rights Reserved
+                        </p>
+                        </td>
+                    </tr>
+              </tbody>
+            </table>
+            <div class="gray_line"></div>
+        </div>
+    </div>
+</body>
+</html>
